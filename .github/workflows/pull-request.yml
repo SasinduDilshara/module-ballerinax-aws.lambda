@@ -32,5 +32,5 @@ jobs:
         run: ./gradlew clean build codeCoverageReport -PLayerTesting --stacktrace --scan --console=plain --no-daemon
       - name: Upload Coverage Report
         uses: codecov/codecov-action@v1
-        with:
-          fail_ci_if_error: true
+        # with:
+        #   fail_ci_if_error: true
